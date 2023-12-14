@@ -2,7 +2,9 @@
   "name": "{{name}}",
   "version": "1.0.0",
   "description": "{{description}}",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "browser": "lib/index.umd.js",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
@@ -14,7 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "eventemitter3": "^5.0.0",
-    "file-saver": "^2.0.5"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.20.2",
